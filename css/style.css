@@ -89,3 +89,28 @@ nav {
     border-radius: 20px;
     padding: 0.15em 0.65em;
 }
+#mainBlocks {
+    display: flex;
+    margin-left: 15%;
+    padding-top: 5dvh;
+}
+#textBlock {
+    padding-left: 0.5dvw;
+    width: 100%;
+    border-left: #2e1e88;
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 4px;
+}
+#textBlock h1 {
+    padding: 0.2em 0.2em 0;
+}
+#textBlock h2 {
+    color: gray;
+    padding: 0.2em;
+}
+#textBlock p {
+    width: 40%;
+    padding: 0.2em;
+}
