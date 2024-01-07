@@ -5,10 +5,10 @@
 }
 .header {
     display: flex;
-    padding-left: 15%;
+    padding-left: 20%;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-right: 15%;
+    padding-right: 20%;
     background-color: #2e1e88;
     align-items: center;
 }
@@ -92,7 +92,7 @@ nav {
 #mainBlocks {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 15%;
+    margin-left: 20%;
     padding-top: 5dvh;
 }
 #textBlock {
@@ -105,6 +105,7 @@ nav {
     border-top-left-radius: 4px;
 }
 #textBlock h1 {
+    font-size: 50px;
     padding: 0.2em 0.2em 0;
 }
 #textBlock h2 {
@@ -117,16 +118,17 @@ nav {
 }
 #formBlock {
     margin-top: 50px;
-    width: 30%;
+    width: 40%;
 }
 #imgBlock {
     margin-top: 50px;
-    width: 50%;
+    width: 30%;
 }
-#imgBlock {
+#imgBlock img {
+    width: 100%;
     position: relative;
     right: 13%;
-    top: -150px;
+    top: -18dvh;
 }
 #formBlock form {
     background-color: #2e1e88;
@@ -173,4 +175,89 @@ form button {
     border-radius: 10px;
     background-color: orange;
     color: white;
+}
+@media (max-width: 1650px) {
+    #imgBlock {
+        width: 32%;
+    }
+    #imgBlock img {
+        top: -9dvh;
+    }
+}
+@media (max-width: 1450px) {
+    #imgBlock {
+        width: 36%;
+    }
+    #imgBlock img {
+        top: -7dvh;
+    }
+    #phone span {
+        padding: 0.1em;
+    }
+}
+@media (max-width: 1300px) {
+    .header {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    #imgBlock img {
+        top: -5dvh;
+    }
+}
+@media (max-width: 1150px) {
+    #imgBlock {
+        width: 40%;
+    }
+    #imgBlock img {
+        top: -5dvh;
+    }
+}
+@media (max-width: 1000px) {
+    #adress {
+        display: none;
+    }
+
+    .header {
+        padding-left: 5%;
+        padding-right: 15%;
+    }
+    #mainBlocks {
+        margin-left: 5%;
+    }
+    #imgBlock {
+        width: 50%;
+    }
+    #imgBlock img {
+        position: relative;
+        width: 130%;
+        right: 11dvw;
+    }
+}
+@media (max-width: 779px) {
+    .header {
+        padding-right: 5%;
+    }
+    #phone {
+        display: none;
+    }
+    #logo span {
+        display: none;
+    }
+    #logo {
+        margin-left: auto;
+    }
+    #logo img {
+        width: 30%;
+        margin-left: auto;
+        filter: invert(100);
+    }
+    #imgBlock {
+        display: none;
+    }
+    #textBlock p {
+        width: 90%;
+    }
+    #formBlock {
+        width: 95%;
+    }
 }
