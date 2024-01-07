@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    padding-left: 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15%;
+    background-color: #2e1e88;
+    align-items: center;
+}
+nav {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e1e88;
+    padding: 0 1rem;
+}
+
+.hamburger-menu {
+    display: block;
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.show-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+#logo,
+#adress,
+#phone {
+    background-color: #2e1e88;
+}
+#logo {
+    width: 20%;
+    color: white;
+}
+#logo img {
+    width: 13%;
+    margin-right: 10px;
+    filter: invert(100);
+}
+#logo figure {
+    display: flex;
+    align-items: center;
+}
+#adress {
+    color: white;
+    margin-right: 35%;
+    width: 20%;
+}
+#phone {
+    margin-left: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#phone span {
+    margin-left: auto;
+    padding: 0 0.45em;
+}
+#phone button {
+    background-color: orange;
+    color: white;
+    line-height: 1.4em;
+    border-radius: 20px;
+    padding: 0.15em 0.65em;
+}
